@@ -1,7 +1,6 @@
 <footer class="bg-[var(--color-card)] text-[var(--color-text)] py-10 mt-20 border-t border-gray-700">
     <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
 
-        {{-- За Булторф --}}
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">За Булторф</h4>
             <p class="text-sm text-[var(--color-text)] leading-relaxed">
@@ -9,7 +8,6 @@
             </p>
         </div>
 
-        {{-- Навигация --}}
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Навигация</h4>
             <ul class="space-y-2 text-sm text-[var(--color-text)]">
@@ -20,7 +18,6 @@
             </ul>
         </div>
 
-        {{-- Последвайте ни --}}
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Последвайте ни</h4>
             <div class="flex justify-center md:justify-start space-x-4 text-2xl text-[var(--color-text)]">
@@ -28,7 +25,6 @@
             </div>
         </div>
 
-        {{-- Телефон за поръчки --}}
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Телефон за поръчки</h4>
             <p class="text-[var(--color-text)] text-sm">

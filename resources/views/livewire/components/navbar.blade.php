@@ -1,13 +1,13 @@
-<div wire:navigate>
+<div wire:navigate x-data="{ open: false }">
     <header class="bg-white text-[var(--color-primary)] shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-
 
             <a wire:navigate href="{{ route('home') }}" class="flex items-center">
                 <img src="{{ asset('images/logo.webp') }}" alt="Bultorf Logo" class="h-20 sm:h-16">
             </a>
 
-            <button @click="open = !open" x-data="{ open: false }" class="sm:hidden focus:outline-none">
+            <!-- Toggle button -->
+            <button @click="open = !open" class="sm:hidden focus:outline-none">
                 <svg x-show="!open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
                     viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -18,7 +18,7 @@
                 </svg>
             </button>
 
-
+            <!-- Desktop nav -->
             <nav class="hidden sm:flex gap-6 text-[var(--color-primary)] text-base font-medium">
                 <a wire:navigate href="{{ route('home') }}"
                     class="hover:underline underline-offset-4 transition">Начало</a>
@@ -30,6 +30,8 @@
                     class="hover:underline underline-offset-4 transition">Контакти</a>
             </nav>
         </div>
+
+        <!-- Mobile nav -->
         <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-200"
             x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0"
             class="sm:hidden bg-white text-[var(--color-primary)] border-t border-gray-200">
