@@ -23,17 +23,26 @@ class Index extends Component
         $products = Product::query()
             ->when(
                 $this->selectedSlugs,
-                function ($query) {
-                    $query->whereHas('category', function ($q) {
-                        $q->whereIn('slug', $this->selectedSlugs);
-                    });
-                }
+                fn($query) => $query->whereHas('category', fn($q) => $q->whereIn('slug', $this->selectedSlugs))
             )
             ->latest()
             ->get();
 
+        $title = 'Каталог с продукти – Bultorf';
+        $description = 'Разгледай нашите торове, субстрати и продукти за почва. Подходящи за дома, градината и професионално земеделие.';
+
         return view('livewire.pages.products.index', [
             'products' => $products,
-        ])->layout('layouts.app');
+        ])->layout('layouts.app', [
+            'title' => $title,
+            'description' => $description,
+            'robots' => 'index, follow',
+            'canonical' => url('/products'),
+            'og_title' => $title,
+            'og_description' => $description,
+            'og_image' => asset('images/bultorf-logo.png'),
+            'og_url' => url('/products'),
+            'og_type' => 'website',
+        ]);
     }
 }

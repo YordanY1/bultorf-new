@@ -10,13 +10,20 @@
             </div>
         @endif
 
+        @if (session()->has('error'))
+            <div class="bg-red-700/20 border border-red-600 text-white px-4 py-3 rounded-xl mb-8 text-center">
+                {{ session('error') }}
+            </div>
+        @endif
 
-        <form wire:submit.prevent="submit"
+        <form wire:submit="submit" wire:recaptcha
             class="space-y-6 bg-[var(--color-card)] p-8 rounded-2xl border border-gray-700 shadow-inner">
+
+            @livewireRecaptcha
 
             <div>
                 <label class="block text-sm font-semibold mb-1">Име</label>
-                <input type="text" wire:model="name"
+                <input type="text" wire:model.defer="name"
                     class="w-full rounded-lg bg-gray-800 text-white border border-gray-600 px-4 py-3 focus:ring-2 focus:ring-[var(--color-accent)] focus:outline-none"
                     placeholder="Вашето име">
                 @error('name')
@@ -24,10 +31,9 @@
                 @enderror
             </div>
 
-
             <div>
                 <label class="block text-sm font-semibold mb-1">Имейл</label>
-                <input type="email" wire:model="email"
+                <input type="email" wire:model.defer="email"
                     class="w-full rounded-lg bg-gray-800 text-white border border-gray-600 px-4 py-3 focus:ring-2 focus:ring-[var(--color-accent)] focus:outline-none"
                     placeholder="you@example.com">
                 @error('email')
@@ -35,17 +41,15 @@
                 @enderror
             </div>
 
-
             <div>
                 <label class="block text-sm font-semibold mb-1">Съобщение</label>
-                <textarea wire:model="message" rows="5"
+                <textarea wire:model.defer="message" rows="5"
                     class="w-full rounded-lg bg-gray-800 text-white border border-gray-600 px-4 py-3 focus:ring-2 focus:ring-[var(--color-accent)] focus:outline-none"
                     placeholder="Вашето съобщение..."></textarea>
                 @error('message')
                     <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
                 @enderror
             </div>
-
 
             <button type="submit"
                 class="w-full bg-[var(--color-accent)] hover:bg-[var(--color-accent-2)] text-white text-lg font-bold py-3 rounded-lg transition-all duration-200 shadow-md">

@@ -21,8 +21,7 @@
         <div class="flex flex-col space-y-3">
 
             <label class="flex items-center gap-3 cursor-pointer transition hover:bg-white/5 px-3 py-2 rounded-lg">
-                <input type="checkbox" value="" wire:click="clearCategories"
-                    :checked="count($selectedSlugs) === 0"
+                <input type="checkbox" value="" wire:click="clearCategories" @checked(count($selectedSlugs) === 0)
                     class="form-checkbox w-5 h-5 text-[var(--color-accent)] rounded focus:ring-[var(--color-accent)] transition" />
                 <span class="text-sm text-[var(--color-text)] font-medium">Всички</span>
             </label>

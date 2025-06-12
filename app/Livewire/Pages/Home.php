@@ -13,6 +13,16 @@ class Home extends Component
 
         return view('livewire.pages.home', [
             'topProducts' => $topProducts
-        ])->layout('layouts.app');
+        ])->layout('layouts.app', [
+            'title' => 'Bultorf – Торфени и Почвени Продукти за Земеделие и Градина',
+            'description' => 'Качествени торове, субстрати и почви за дома и бизнеса. Bultorf предлага богата селекция от продукти за плодородна почва.',
+            'robots' => 'index, follow',
+            'canonical' => url('/'),
+            'og_title' => 'Bultorf – Естествени Торове за Плодородна Земя',
+            'og_description' => 'Разгледай нашите органични торове и субстрати. Bultorf е партньор на всяко устойчиво земеделие и озеленяване.',
+            'og_image' => asset('images/bultorf-logo.png'),
+            'og_url' => url('/'),
+            'og_type' => 'website',
+        ]);
     }
 }

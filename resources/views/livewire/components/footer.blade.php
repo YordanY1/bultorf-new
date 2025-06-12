@@ -47,4 +47,10 @@
     <div class="mt-8 text-center text-xs text-gray-500">
         © {{ date('Y') }} Bultorf. Всички права запазени.
     </div>
+
+    <div class="mt-2 text-center text-xs text-gray-500">
+        <a wire:navigate href="{{ route('privacy') }}" class="underline hover:text-[var(--color-accent)]">
+            Политика за поверителност
+        </a>
+    </div>
 </footer>
