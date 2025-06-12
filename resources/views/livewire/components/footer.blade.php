@@ -11,10 +11,13 @@
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Навигация</h4>
             <ul class="space-y-2 text-sm text-[var(--color-text)]">
-                <li><a href="{{ route('home') }}" class="hover:text-[var(--color-accent)]">Начало</a></li>
-                <li><a href="{{ route('products.index') }}" class="hover:text-[var(--color-accent)]">Продукти</a></li>
-                <li><a href="{{ route('about.index') }}" class="hover:text-[var(--color-accent)]">За нас</a></li>
-                <li><a href="{{ route('contact.index') }}" class="hover:text-[var(--color-accent)]">Контакти</a></li>
+                <li><a wire:navigate href="{{ route('home') }}" class="hover:text-[var(--color-accent)]">Начало</a></li>
+                <li><a wire:navigate href="{{ route('products.index') }}"
+                        class="hover:text-[var(--color-accent)]">Продукти</a></li>
+                <li><a wire:navigate href="{{ route('about.index') }}" class="hover:text-[var(--color-accent)]">За
+                        нас</a></li>
+                <li><a wire:navigate href="{{ route('contact.index') }}"
+                        class="hover:text-[var(--color-accent)]">Контакти</a></li>
             </ul>
         </div>
 
@@ -22,8 +25,12 @@
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Последвайте ни</h4>
             <div class="flex justify-center md:justify-start space-x-4 text-2xl text-[var(--color-text)]">
                 <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+                {{-- <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-red-600"><i class="fab fa-youtube"></i></a> --}}
             </div>
         </div>
+
 
         <div>
             <h4 class="text-lg font-bold mb-4 text-[var(--color-primary)]">Телефон за поръчки</h4>

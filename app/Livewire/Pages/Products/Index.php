@@ -14,7 +14,6 @@ class Index extends Component
 
     public function filterByCategories(array $slugs)
     {
-        logger('📥 Index received slugs:', $slugs);
         $this->selectedSlugs = $slugs;
     }
 

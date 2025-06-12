@@ -22,7 +22,6 @@ class ProductFilters extends Component
 
     public function applyCategoryFilter()
     {
-        logger('🔄 applyCategoryFilter:', $this->selectedSlugs);
 
         $this->categories = implode(',', $this->selectedSlugs);
         $this->dispatch('filterByCategories', $this->selectedSlugs);
