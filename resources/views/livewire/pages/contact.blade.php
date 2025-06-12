@@ -5,10 +5,11 @@
         </h1>
 
         @if (session()->has('success'))
-            <div class="bg-green-700/20 border border-green-600 text-green-300 px-4 py-3 rounded-xl mb-8 text-center">
+            <div class="bg-green-700/20 border border-green-600 text-white px-4 py-3 rounded-xl mb-8 text-center">
                 {{ session('success') }}
             </div>
         @endif
+
 
         <form wire:submit.prevent="submit"
             class="space-y-6 bg-[var(--color-card)] p-8 rounded-2xl border border-gray-700 shadow-inner">
