@@ -4,8 +4,9 @@
     class="group bg-white rounded-2xl shadow-md hover:shadow-xl transition border border-gray-100 overflow-hidden flex flex-col">
 
     <div class="bg-gray-50">
-        <img src="{{ asset('images/' . $product->image) }}" alt="{{ $product->name }}"
+        <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}"
             class="w-full object-contain h-64 p-4 transition-transform duration-300 group-hover:scale-105">
+
     </div>
 
     <div class="flex flex-col justify-between flex-grow p-5">
@@ -20,14 +21,12 @@
             </h3>
 
             <p class="text-sm text-gray-600 leading-relaxed mb-4">
-                {{ Str::limit($product->description, 90) }}
+                {{ Str::limit(str_replace('&nbsp;', ' ', strip_tags($product->description)), 90) }}
             </p>
+
         </div>
 
         <div class="flex items-center justify-between mt-auto">
-            <div class="text-[var(--color-accent)] font-bold text-lg">
-                {{ number_format($product->price, 2) }} лв
-            </div>
 
             <a wire:navigate href="{{ route('products.show', $product) }}"
                 class="inline-block bg-[var(--color-cta)] hover:bg-[var(--color-accent-2)] text-white text-sm font-semibold px-4 py-2 rounded-lg transition">

@@ -12,10 +12,10 @@
                     Каталог за качествени торове – органични, минерални и NPK решения за земеделие и градинарство.
                 </p>
 
-                {{-- <a href="{{ route('products.index') }}"
+                <a wire:navigate href="{{ route('products.index') }}"
                     class="mt-6 inline-block bg-white text-[var(--color-accent)] hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition">
                     Разгледай каталога
-                </a> --}}
+                </a>
             </div>
         </div>
     </section>
