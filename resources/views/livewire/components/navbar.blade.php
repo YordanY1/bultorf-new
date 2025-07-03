@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
             <a wire:navigate href="{{ route('home') }}" class="flex items-center">
-                <img src="{{ asset('images/logo.webp') }}" alt="Bultorf Logo" class="h-20 sm:h-16">
+                <img src="{{ asset('images/logo.webp') }}" alt="Bultorf Logo" class="h-30 sm:h-35">
             </a>
 
             <!-- Toggle button -->
@@ -21,13 +21,13 @@
             <!-- Desktop nav -->
             <nav class="hidden sm:flex gap-6 text-[var(--color-primary)] text-base font-medium">
                 <a wire:navigate href="{{ route('home') }}"
-                    class="hover:underline underline-offset-4 transition">Начало</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Начало</a>
                 <a wire:navigate href="{{ route('products.index') }}"
-                    class="hover:underline underline-offset-4 transition">Продукти</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Продукти</a>
                 <a wire:navigate href="{{ route('about.index') }}"
-                    class="hover:underline underline-offset-4 transition">За нас</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">За нас</a>
                 <a wire:navigate href="{{ route('contact.index') }}"
-                    class="hover:underline underline-offset-4 transition">Контакти</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Контакти</a>
             </nav>
         </div>
 
@@ -37,13 +37,13 @@
             class="sm:hidden bg-white text-[var(--color-primary)] border-t border-gray-200">
             <nav class="flex flex-col items-center py-4 space-y-4 text-base font-medium">
                 <a wire:navigate href="{{ route('home') }}"
-                    class="hover:underline underline-offset-4 transition">Начало</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Начало</a>
                 <a wire:navigate href="{{ route('products.index') }}"
-                    class="hover:underline underline-offset-4 transition">Продукти</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Продукти</a>
                 <a wire:navigate href="{{ route('about.index') }}"
-                    class="hover:underline underline-offset-4 transition">За нас</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">За нас</a>
                 <a wire:navigate href="{{ route('contact.index') }}"
-                    class="hover:underline underline-offset-4 transition">Контакти</a>
+                    class="hover:underline underline-offset-4 transition text-2xl">Контакти</a>
             </nav>
         </div>
     </header>

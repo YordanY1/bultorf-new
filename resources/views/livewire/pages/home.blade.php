@@ -5,11 +5,12 @@
         style="background-image: url('{{ asset('images/hero-background.jpg') }}');">
         <div class="container mx-auto text-center">
             <div class="flex flex-col items-center justify-center space-y-4">
-                <h1 class="text-4xl sm:text-5xl font-bold">Добре дошли в
+                <h1 class="text-5xl sm:text-5xl font-bold">Добре дошли в
                     <span class="text-[var(--color-accent)]">Bultorf</span>
                 </h1>
-                <p class="text-lg max-w-2xl text-white/90">
-                    Каталог за качествени торове – органични, минерални и NPK решения за земеделие и градинарство.
+                <p class="text-3xl max-w-3xl text-white/90">
+                    <span class="text-[var(--color-accent)]">за качествени торове</span>
+                    минерални и NPK решения за земеделие и градинарство.
                 </p>
 
                 <a wire:navigate href="{{ route('products.index') }}"
