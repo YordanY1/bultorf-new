@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
 
             <a wire:navigate href="{{ route('home') }}" class="flex items-center">
-                <img src="{{ asset('images/logo.webp') }}" alt="Bultorf Logo" class="h-30 sm:h-35">
+                <img src="{{ asset('images/logo.webp') }}" alt="Bultorf Logo" class="h-20 sm:h-16">
             </a>
 
             <!-- Toggle button -->

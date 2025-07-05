@@ -3,7 +3,7 @@
 
         <div>
             <img src="{{ asset('storage/' . $product->image) }}" alt="{{ $product->name }}"
-                class="w-full object-contain h-full p-4 transition-transform duration-300 group-hover:scale-105">
+                class="w-full object-contain h-64 p-4 transition-transform duration-300 group-hover:scale-105">
         </div>
 
         <div>
