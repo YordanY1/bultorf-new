@@ -49,6 +49,6 @@ class User extends Authenticatable
 
      public function canAccessPanel(Panel $panel): bool
     {
-        return $this->email === 'rumenk98@gmail.com';
+        return $this->email === 'adminbultorf@gmail.com';
     }
 }
