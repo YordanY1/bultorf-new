@@ -7,7 +7,7 @@
 
     <title>{{ $title ?? 'Bultorf – Висококачествени торфове и почвени продукти' }}</title>
     <meta name="description"
-        content="{{ $description ?? 'Открийте органични и минерални торове от Bultorf. Подобрете реколтата си с висококачествени продукти за земеделие и градинарство.' }}" />
+        content="{{ $description ?? 'Открийте органични и минерални торфове от Bultorf. Подобрете реколтата си с висококачествени продукти за земеделие и градинарство.' }}" />
     <meta name="robots" content="{{ $robots ?? 'index, follow' }}" />
     <link rel="canonical" href="{{ $canonical ?? url()->current() }}" />
 

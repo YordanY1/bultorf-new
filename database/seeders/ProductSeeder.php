@@ -19,7 +19,7 @@ class ProductSeeder extends Seeder
             'description' => 'Азотен тор, подходящ за зърнени култури и зеленчуци.',
             'price' => 45.50,
             'image' => 'amonia.webp',
-            'category_id' => $categoryIds['Азотни торове'],
+            'category_id' => $categoryIds['Азотни торфове'],
             'top_position' => true,
         ]);
 
@@ -29,7 +29,7 @@ class ProductSeeder extends Seeder
             'description' => 'Фосфорен тор за стимулиране на кореновата система.',
             'price' => 38.00,
             'image' => 'amonia.webp',
-            'category_id' => $categoryIds['Фосфорни торове'],
+            'category_id' => $categoryIds['Фосфорни торфове'],
             'top_position' => false,
         ]);
 
@@ -39,7 +39,7 @@ class ProductSeeder extends Seeder
             'description' => 'Калиев тор за подобряване на устойчивостта на растенията.',
             'price' => 42.75,
             'image' => 'amonia.webp',
-            'category_id' => $categoryIds['Калиеви торове'],
+            'category_id' => $categoryIds['Калиеви торфове'],
             'top_position' => false,
         ]);
     }

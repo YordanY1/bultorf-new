@@ -9,7 +9,7 @@
                     <span class="text-[var(--color-accent)]">Bultorf</span>
                 </h1>
                 <p class="text-3xl max-w-3xl text-white/90">
-                    <span class="text-[var(--color-accent)]">за качествени торове</span>
+                    <span class="text-[var(--color-accent)]">за качествени торфове</span>
                     минерални и NPK решения за земеделие и градинарство.
                 </p>
 

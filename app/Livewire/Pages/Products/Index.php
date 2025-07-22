@@ -29,7 +29,7 @@ class Index extends Component
             ->get();
 
         $title = 'Каталог с продукти – Bultorf';
-        $description = 'Разгледай нашите торове, субстрати и продукти за почва. Подходящи за дома, градината и професионално земеделие.';
+        $description = 'Разгледай нашите торфове, субстрати и продукти за почва. Подходящи за дома, градината и професионално земеделие.';
 
         return view('livewire.pages.products.index', [
             'products' => $products,
